@@ -1,46 +1,47 @@
-<section id="contact" >
-    <div class="shadow p-3 mb-5 rounded m-3" style ="background:#E9EEF2">
-      <div class = "container p-3 m-2" >
-          <h2 class = "text-center m-1" style ="color: #34323B;" >Join Us</h2>
-          <div class="row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card mt-2 " style ="background: #E9EEF2;">
-                <div class="card-body">
-                  <h5 class="card-title" style ="color: #34323B;">Prayer Requests</h5>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label" style ="color: #34323B;">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder ="example@gmail.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label" style ="color: #34323B;">Prayer Request</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder ="Type here"></textarea>
-                  </div>
-                  <div class ="text-end">
-                     <button type="button" class="btn btn-dark">Send</button>
-                  </div>
-                </div>
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center" data-aos="fade-up">Join Us</h2>
+    <div class="row g-4">
+      <!-- Prayer Requests -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card contact-card">
+          <div class="card-body">
+            <h5 class="card-title">Prayer Requests</h5>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
               </div>
-            </div>
-            <div class="col-sm-6 ">
-              <div class="card mt-2" style ="background: #E9EEF2;">
-                <div class="card-body">
-                  <h5 class="card-title" style ="color: #34323B;">Social Media & Contact</h5>
-                      <a href="https://maps.app.goo.gl/d4WzFsQxDokYy9TY7" target="_blank" class="btn btn-outline-dark" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="Location" >
-                        <i class="bi bi-geo-alt-fill"></i>
-                      </a>
-                  <a href="https://youtube.com/@alphaagchurchtrichy8041" target="_blank" class="btn btn-outline-dark" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="Youtube">
-                    <i class="bi bi-youtube"></i>
-                  </a>
-                  <a href="mailto:alphaag07@gmail.com" target="_blank" class="btn btn-outline-dark" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="Gmail">
-                    <i class="bi bi-envelope-fill"></i> 
-                  </a>
-                  <br> <br>
-                  <h6 class="" style ="color: #34323B;">Phone no: +91 9043567891</h6>
-                </div>
+              <div class="mb-3">
+                <label for="prayerRequest" class="form-label">Prayer Request</label>
+                <textarea class="form-control" id="prayerRequest" rows="3" placeholder="Type here"></textarea>
               </div>
-            </div>
-            
+              <div class="text-end">
+                <button type="submit" class="btn btn-custom">Send</button>
+              </div>
+            </form>
           </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card contact-card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Social Media & Contact</h5>
+            <div class="d-flex justify-content-center gap-3">
+              <a href="https://maps.app.goo.gl/d4WzFsQxDokYy9TY7" class="btn btn-outline-dark" target="_blank">
+                <i class="bi bi-geo-alt-fill"></i>
+              </a>
+              <a href="https://youtube.com/@alphaagchurchtrichy8041" class="btn btn-outline-dark" target="_blank">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="mailto:alphaag07@gmail.com" class="btn btn-outline-dark" target="_blank">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+            <p class="mt-4 text-muted">Phone: +91 9043567891</p>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 </section>

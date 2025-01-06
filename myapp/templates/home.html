@@ -1,7 +1,10 @@
 <section id="home">
-    <div class ="container">
-        {% load static %}
-        
-        <img src="{% static 'image/img.jpg' %}" class="img-fluid w-100" style ="height: 700px">    
-    </div>        
+    {% load static %}
+    <div class="position-relative">
+        <img src="{% static 'image/img.jpg' %}" class="img-fluid w-100" style ="height:700px;" >
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
+            {% include 'regular.html' %}
+        </div>
+    </div>
+              
 </section>

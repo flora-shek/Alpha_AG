@@ -1,20 +1,24 @@
 <section id="event" class="py-5 bg-light">
   <div class="container">
     <h2 class="section-title text-center" data-aos="fade-up">Upcoming Events</h2>
-    <div class="card mb-3 card-hover" data-aos="fade-up">
+
+    {% for x in events %}
+    <div class="card mb-4 card-hover" data-aos="fade-up">
       <div class="row g-0">
-        <div class="col-md-8">
+        <div class="col-12">
           <div class="card-body">
-            <h5 class="card-title">New Year's Eve Meeting</h5>
-            <p class="text-muted"><i class="bi bi-calendar-event"></i> Date: 31.12.24</p>
-            <p class="text-muted"><i class="bi bi-clock"></i> Time: 10:30 pm - 2:00 am</p>
+            <h5 class="card-title">{{ x.event_title }}</h5>
             <p class="text-muted">
-              Join us this New Year’s Eve to reflect on the past year and welcome the new one with joy, gratitude,
-              and blessings.
+              <i class="bi bi-calendar-event"></i> Date: {{ x.date }}
             </p>
+            <p class="text-muted">
+              <i class="bi bi-clock"></i> Time: {{ x.time }}
+            </p>
+            <p class="card-text">{{ x.description }}</p>
           </div>
         </div>
       </div>
     </div>
+    {% endfor %}
   </div>
 </section>

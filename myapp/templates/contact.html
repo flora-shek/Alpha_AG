@@ -7,7 +7,9 @@
         <div class="card contact-card">
           <div class="card-body">
             <h5 class="card-title">Prayer Requests</h5>
-            <form>
+            <form method ="post">
+              {% csrf_token %}
+              {{ form.as_p }}
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
@@ -36,6 +38,9 @@
               </a>
               <a href="mailto:alphaag07@gmail.com" class="btn btn-outline-dark" target="_blank">
                 <i class="bi bi-envelope-fill"></i>
+              </a>
+              <a href="https://www.facebook.com/rock.fellar.9/" class="btn btn-outline-dark" target="_blank">
+                <i class="bi bi-facebook"></i>
               </a>
             </div>
             <p class="mt-4 text-muted">Phone: +91 9043567891</p>

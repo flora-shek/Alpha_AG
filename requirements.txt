@@ -124,3 +124,4 @@ wcwidth
 webcolors
 webencodings
 websocket-client
+gunicorn

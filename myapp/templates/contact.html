@@ -7,16 +7,16 @@
         <div class="card contact-card">
           <div class="card-body">
             <h5 class="card-title">Prayer Requests</h5>
-            <form method ="post">
+            <form  method ="post">
               {% csrf_token %}
-              {{ form.as_p }}
+              
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                <input type="email" class="form-control" id="email" name = "email" value="{{ form.email.value |default:'' }}" placeholder="example@gmail.com" >
               </div>
               <div class="mb-3">
                 <label for="prayerRequest" class="form-label">Prayer Request</label>
-                <textarea class="form-control" id="prayerRequest" rows="3" placeholder="Type here"></textarea>
+                <textarea class="form-control" id="prayerRequest" name="prayerRequest" rows="3" placeholder="Type here" value="{{ form.request.value }}"></textarea>
               </div>
               <div class="text-end">
                 <button type="submit" class="btn btn-custom">Send</button>

@@ -55,13 +55,18 @@
   <div>
     {% include 'navbar.html' %}
     <div class = "" style ="background:#eeeeee;">
-      
+      {% if messages %}
+        <div>
+          {% include 'toast.html' %}
+        </div>
+  {% endif %}
       {% include 'home.html' %}
     </div>
     <div class = "container">
       {% include 'about.html' %}
+    {% if events %}
       {% include 'event.html' %}
-
+    {% endif %}
       {% include 'contact.html' %}
       {% include 'footer.html' %}
     </div>

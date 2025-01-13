@@ -9,12 +9,12 @@
           <div class="card-body">
             <h5 class="card-title">{{ x.event_title }}</h5>
             <p class="text-muted">
-              <i class="bi bi-calendar-event"></i> Date: {{ x.date }}
+              <i class="bi bi-calendar-event"></i> Date: {{ x.date|date:"b. j, Y" }}
             </p>
             <p class="text-muted">
-              <i class="bi bi-clock"></i> Time: {{ x.time }}
+              <i class="bi bi-clock"></i> Time: {{ x.event_time }}
             </p>
-            <p class="card-text">{{ x.description }}</p>
+            <p class="card-text">{{ x.event_description }}</p>
           </div>
         </div>
       </div>
